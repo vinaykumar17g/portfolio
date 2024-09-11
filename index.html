@@ -13,6 +13,9 @@
         {
             background-color:black;
             color: white;
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-attachment: fixed;
         }
         @media (max-width:400px) 
         {
@@ -20,6 +23,23 @@
             {
                 height:45px;
                 width:100%;
+            }
+            .container
+            {
+                height:600px;
+            }
+            .contain1
+            {
+                height:50%;
+                width:100%;
+                margin-left: 10px;
+            }
+            .contain2
+            {
+                height:50%;
+                width:100%;
+                display: flex;
+                justify-content: center;
             }
         }
         li
@@ -31,7 +51,7 @@
         {
             list-style: none;
             float:right;
-            margin-top:10px;
+            margin-top:20px;
             margin-right: 20px;
         }
         a
@@ -40,25 +60,11 @@
             color:white;
             text-decoration: none;
         }
-        .container
-        {
-            height:500px;
-            display: flex;
-        }
-        .contain1
-        {
-            height:100px;
-            width:50%;
-        }
-        .contain2
-        {
-            height:100px;
-            width:50%;
-        }
         footer
         {
             display:flex;
             font-size: 20px;
+            margin-top: 20px;
         }
         .nav-contain
         {
@@ -76,7 +82,6 @@
             color:white;
             border: none;
             font-size:20px;
-            margin-top:10px;
         }
         .nav
         {
@@ -88,6 +93,17 @@
         {
             display: none;
         }
+        img
+        {
+            height:98%;
+            border-radius: 50%;
+            border:2px solid white;
+            &:hover
+            {
+                height:100%;
+            }
+            
+        }
         /*.nav1,.nav2
         {
             width:50%
@@ -97,11 +113,6 @@
 </head>
 <body>
     <nav>
-        <!--<ul><li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact-Us</a></li>
-            <li><a href="#">Project</a></li>
-        </ul>-->
         <ul>
             <li><button><i class="fa-solid fa-bars"></i></button></li>
         </ul>
@@ -118,9 +129,16 @@
 <hr>
 
 <div class="container">
-    <div class="contain1"></div>
-    <div class="contain2"></div>
-</div>
+    <div class="contain1">
+        <br>
+        <h1>HELLO EVERYONE!</h1><br>
+        <h1>I'M VINAY KUMAR</h1><br><br>
+        <h1>WEB DEVELOPER </h1>
+    </div>
+    <div class="contain2">
+        <img src="vinay.jpg"><br>
+    </div>
+</div><br><br><hr>
 <footer>
     
     <div class="nav-contain">
