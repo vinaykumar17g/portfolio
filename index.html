@@ -17,13 +17,13 @@
             background-size: cover;
             background-attachment: fixed;
         }
-        @media (max-width:400px) 
-        {
-            nav
+        nav
             {
                 height:45px;
                 width:100%;
             }
+        @media (max-width:500px) 
+        {
             .container
             {
                 height:600px;
@@ -41,13 +41,51 @@
                 display: flex;
                 justify-content: center;
             }
+            img
+            {
+            height:98%;
+            border-radius: 50%;
+            border:2px solid white;
+            &:hover
+            {
+                height:100%;
+            }
+            
+        }
+        }
+        @media (min-width:500px)
+        {
+            .container
+            {
+                margin-top: 25px;
+                height:500px;
+                width:100%;
+                display: flex;
+            }
+            .contain1,.contain2
+            {
+                margin-left: 25px;
+                height:100%;
+                width:50%;
+            }
+            img
+            {
+                margin-left: 30px;
+                height:90%;
+                border-radius: 50%;
+                border:2px solid white;
+                &:hover
+                {
+                    height:72%;
+                }
+            }
         }
         li
         {
             
             list-style: none;
         }
-        nav ul li
+        .nav1 ul li
         {
             list-style: none;
             float:right;
@@ -93,26 +131,15 @@
         {
             display: none;
         }
-        img
+        h1
         {
-            height:98%;
-            border-radius: 50%;
-            border:2px solid white;
-            &:hover
-            {
-                height:100%;
-            }
-            
+            font-size:55px;
         }
-        /*.nav1,.nav2
-        {
-            width:50%
-        }*/
     </style>
     <script src="https://kit.fontawesome.com/df95116d29.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
+    <nav class="nav1">
         <ul>
             <li><button><i class="fa-solid fa-bars"></i></button></li>
         </ul>
@@ -165,6 +192,8 @@
             toggle="hide";
         }
     })
+    const width=window.innerWidth;
+    console.log(width);
 </script>
 </body>
 </html>
