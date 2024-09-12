@@ -63,12 +63,12 @@
         {
             display:none;
         }
-            li
+        li
         {
             list-style: none;
         }
         }
-        @media (min-width:500px)
+        @media (min-width:700px)
         {
             button
             {
@@ -83,24 +83,27 @@
             }
             .contain1,.contain2
             {
-                margin-left: 25px;
                 height:100%;
                 width:50%;
+            }
+            .contain1
+            {
+                margin-left:25px;
             }
             img
             {
                 margin-left: 30px;
-                height:90%;
+                height:60%;
                 border-radius: 50%;
                 border:2px solid white;
                 &:hover
                 {
-                    height:92%;
+                    height:62%;
                 }
             }
             h1
             {
-                font-size:55px;
+                font-size:42px;
             }
             nav ul li
             {
@@ -150,7 +153,52 @@
         {
             display: none;
         }
-        
+        @media(min-width:500px) and (max-width:700px)
+        {
+            nav ul li
+            {
+                list-style: none;
+                float:right;
+                margin-top:20px;
+                margin-right: 20px;
+            }
+            .container
+            {
+                height:600px;
+            }
+            .contain1
+            {
+                height:50%;
+                width:100%;
+                margin-left: 10px;
+            }
+            .contain2
+            {
+                height:50%;
+                width:100%;
+                display: flex;
+                justify-content: center;
+            }
+            img
+            {
+            height:98%;
+            border-radius: 50%;
+            border:2px solid white;
+            &:hover
+            {
+                height:100%;
+            }
+            
+        }
+        .toggle
+        {
+            display:none;
+        }
+        li
+        {
+            list-style: none;
+        }
+        }
     </style>
     <script src="https://kit.fontawesome.com/df95116d29.js" crossorigin="anonymous"></script>
 </head>
