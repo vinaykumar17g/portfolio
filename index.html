@@ -24,6 +24,13 @@
             }
         @media (max-width:500px) 
         {
+            nav ul li
+            {
+                list-style: none;
+                float:right;
+                margin-top:20px;
+                margin-right: 20px;
+            }
             .container
             {
                 height:600px;
@@ -52,19 +59,23 @@
             }
             
         }
+        .toggle
+        {
+            display:none;
+        }
         }
         @media (min-width:500px)
         {
+            button
+            {
+                display:none;
+            }
             .container
             {
                 margin-top: 25px;
                 height:500px;
                 width:100%;
                 display: flex;
-            }
-             h1
-            {
-                font-size:55px;
             }
             .contain1,.contain2
             {
@@ -80,21 +91,21 @@
                 border:2px solid white;
                 &:hover
                 {
-                    height:72%;
+                    height:92%;
                 }
             }
-        }
-        li
-        {
-            
-            list-style: none;
-        }
-        .nav1 ul li
-        {
-            list-style: none;
-            float:right;
-            margin-top:20px;
-            margin-right: 20px;
+            h1
+            {
+                font-size:55px;
+            }
+            nav ul li
+            {
+                list-style: none;
+                float:left;
+                margin-top:20px;
+                margin-left:10%;
+                /*text-align: center;*/
+            }
         }
         a
         {
@@ -135,13 +146,20 @@
         {
             display: none;
         }
+        
     </style>
     <script src="https://kit.fontawesome.com/df95116d29.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="nav1">
+    <nav>
         <ul>
             <li><button><i class="fa-solid fa-bars"></i></button></li>
+            <ul class="toggle">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact-Us</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
         </ul>
 </nav><br>
 <div class="nav">
@@ -158,9 +176,9 @@
 <div class="container">
     <div class="contain1">
         <br>
-        <h1>HELLO EVERYONE!</h1><br>
-        <h1>I'M VINAY KUMAR</h1><br><br>
-        <h1>WEB DEVELOPER </h1>
+        <center><h1>HELLO EVERYONE!</h1><br>
+            <h1>I'M VINAY KUMAR</h1><br><br>
+            <h1>WEB DEVELOPER </h1></center>
     </div>
     <div class="contain2">
         <img src="vinay.jpg"><br>
@@ -175,7 +193,7 @@
     <div class="icon"><a href="https://www.linkedin.com/in/vinay-kumar-184320251/"><i class="fa-brands fa-linkedin"></i></a></div>
     <div class="icon"><a href="https://www.facebook.com/profile.php?id=100057895029243"><i class="fa-brands fa-facebook"></i></a></div></div>
     
-</footer><br><br>
+</footer><br><hr>
 <script>
     let button=document.querySelector("button");
     let toggle="hide";
