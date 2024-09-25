@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Document</title>
     <style>
         *
         {
@@ -67,6 +67,22 @@
         {
             list-style: none;
         }
+        footer
+        {
+            display:flex;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .nav-contain
+        {
+            height:40px;
+            display: flex;
+        }
+        .icon
+        {
+            height:100%;
+            width:40px;
+        }
         }
         @media (min-width:700px)
         {
@@ -113,28 +129,26 @@
                 margin-left:10%;
                 /*text-align: center;*/
             }
+            .nav-contain
+            {
+                display:flex;
+                justify-content: center;
+            }
+            .icon
+            {
+                margin-top: 15px;
+                margin-left:10%;
+            }
+            h3
+            {
+                font-size: 25px;
+            }        
         }
         a
         {
             font-size: 20px;
             color:white;
             text-decoration: none;
-        }
-        footer
-        {
-            display:flex;
-            font-size: 20px;
-            margin-top: 20px;
-        }
-        .nav-contain
-        {
-            height:40px;
-            display: flex;
-        }
-        .icon
-        {
-            height:100%;
-            width:40px;
         }
         button
         {
@@ -179,6 +193,22 @@
                 display: flex;
                 justify-content: center;
             }
+            footer
+        {
+            display:flex;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .nav-contain
+        {
+            height:40px;
+            display: flex;
+        }
+        .icon
+        {
+            height:100%;
+            width:40px;
+        }
             img
             {
             height:98%;
@@ -203,23 +233,25 @@
     <script src="https://kit.fontawesome.com/df95116d29.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
+    <center><nav>
         <ul>
             <li><button><i class="fa-solid fa-bars"></i></button></li>
             <ul class="toggle">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact-Us</a></li>
+                <li><a href="#">Contact</a></li>
                 <li><a href="#">Project</a></li>
+                <li><a href="resume.pdf">Resume</a></li>
             </ul>
         </ul>
-</nav><br>
+</nav></center><br>
 <div class="nav">
     <ul class="hide" id="ul">
-        <li><a href="#">Home</a></li><br>
+        <li><a href="index.html">Home</a></li><br>
         <li><a href="#">About</a></li><br>
         <li><a href="#">Contact-Us</a></li><br>
         <li><a href="#">Project</a></li><br>
+        <li><a href="resume.pdf">Resume</a></li><br/>
     </ul>
     
 </div>
@@ -228,8 +260,8 @@
 <div class="container">
     <div class="contain1">
         <br>
-        <center><h1>HELLO EVERYONE!</h1><br>
-            <h1>I'M VINAY KUMAR</h1><br><br>
+        <center><h1>Hi,</h1><br>
+            <h1 style="color:yellow">I'M VINAY KUMAR</h1><br><br>
             <h1>WEB DEVELOPER </h1></center>
     </div>
     <div class="contain2">
@@ -237,15 +269,14 @@
     </div>
 </div><br><br><hr>
 <footer>
-    
+    <center><h3 style="margin-left:20px;">© Vinay Kumar</h3>
     <div class="nav-contain">
-    <p style="margin-left:20px;">© Vinay Kumar</p>
-    <div class="icon" style="margin-left:20px;"><a href="https://www.instagram.com/vinaykumar17g/"><i class="fa-brands fa-instagram"></i></a></div>
-    <div class="icon"><a href="https://wa.me/+918302109953"><i class="fa-brands fa-whatsapp"></i></a></div>
-    <div class="icon"><a href="https://www.linkedin.com/in/vinay-kumar-184320251/"><i class="fa-brands fa-linkedin"></i></a></div>
-    <div class="icon"><a href="https://www.facebook.com/profile.php?id=100057895029243"><i class="fa-brands fa-facebook"></i></a></div></div>
+        <div class="icon" style="margin-left:20px;"><a href="https://www.instagram.com/vinaykumar17g/"><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="icon"><a href="https://wa.me/+918302109953"><i class="fa-brands fa-whatsapp"></i></a></div>
+        <div class="icon"><a href="https://www.linkedin.com/in/vinay-kumar-184320251/"><i class="fa-brands fa-linkedin"></i></a></div>
+        <div class="icon"><a href="https://www.facebook.com/profile.php?id=100057895029243"><i class="fa-brands fa-facebook"></i></a></div></div></center>
     
-</footer><br><hr>
+</footer><br>
 <script>
     let button=document.querySelector("button");
     let toggle="hide";
@@ -262,8 +293,6 @@
             toggle="hide";
         }
     })
-    const width=window.innerWidth;
-    console.log(width);
 </script>
 </body>
 </html>
