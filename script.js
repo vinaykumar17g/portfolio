@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Form submitted:', formData);
         let contact = async (data)=>
         {
-            let api = await fetch("https://contact-0xhp.onrender.com/contacts",{
+            let api = await fetch("https://contact-backend-kappa.vercel.app/contacts",{
             "method":"POST",
             "headers":{"content-type":"application/json"},
             "body":JSON.stringify(formData)
