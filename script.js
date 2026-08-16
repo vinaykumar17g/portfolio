@@ -192,11 +192,11 @@ document.addEventListener('DOMContentLoaded', () => {
             link: 'https://vinaykumar17g.github.io/calc/'
         },
         {
-            title: 'WEATHER APP',
-            description: 'Responsive weather app fetching real-time API data, displaying temperature, humidity, and conditions.',
+            title: 'Notes Hub',
+            description: 'Responsive web application for managing notes, pyq, featuring a user-friendly interface.',
             image: 'project6.png',
             technologies: ['HTML', 'CSS', 'JavaScript'],
-            link: 'https://vinaykumar17g.github.io/weather/'
+            link: 'https://b-tech-notes-three.vercel.app/'
         }
     ];
 
