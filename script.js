@@ -11,9 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const typed = new Typed('.typed-text', {
         strings: [
             'Full Stack Developer',
+            'Faculty & Developer',
             'Android Developer',
             'Web Developer',
-            'Problem Solver'
+            'Teacher & Problem Solver'
         ],
         typeSpeed: 50,
         backSpeed: 30,
