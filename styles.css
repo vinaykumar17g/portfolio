@@ -438,6 +438,12 @@ body {
     background: var(--secondary-color);
 }
 
+/* Experience Section */
+.experience {
+    padding: 6rem 0;
+    background: var(--background-dark);
+}
+
 /* Education Section */
 .education {
     padding: 6rem 0;
